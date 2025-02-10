@@ -13,6 +13,12 @@ function maxOfTwoNumbers(num1, num2) {
     return maxNum;
 }
 
+/*Best way:
+function maxOfTwoNumbers(num1, num2) {
+    return num1 > num2 ? num1 : num2;
+}
+*/
+
 
 
 
@@ -97,3 +103,11 @@ function doesWordExist(words2, wordToSearch) {
         return false
     }
 }
+
+/**
+ * Best solution:
+ function doesWordExist(words, wordToSearch) {
+    if (words.length === 0) return null;
+    return words.includes(wordToSearch);
+}
+ */
